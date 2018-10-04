@@ -1,0 +1,27 @@
+﻿@model UserViewModel
+@{ 
+    ViewBag.Title = "Management";
+}
+<form method="post">
+    <label asp-for="Mail"></label>
+    <input type="email" asp-for="Mail"/>
+    <br />
+    <label asp-for="Users"></label>
+    <input asp-for="Users"/>
+    <br />
+    <label asp-for="Password"></label>
+    <input type="password" asp-for="Password"/>
+    <br />
+    <label asp-for="Password">Repeat Password</label>
+    <input type="password" asp-for="Password" />
+    <br />
+    <label asp-for="Status"></label>
+    <input asp-for="Status" type="radio" value=@true/> Active
+    <input asp-for="Status" type="radio" value=@false/> Inactive
+    <br />
+    <label asp-for="Sex"></label>
+    <input asp-for="Sex" type="radio" value="Male" /> M
+    <input asp-for="Sex" type="radio" value="Female" /> F
+    <br />
+    <input type="submit" value="Save User" />
+</form>

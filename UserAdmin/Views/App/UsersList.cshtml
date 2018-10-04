@@ -1,0 +1,16 @@
+﻿@model IEnumerable<User>
+<h3>Users View</h3>
+<p>Count: @Model.Count()</p>
+<div class="row">
+    @foreach (var u in Model)
+    {
+        <div class="col-md-3">
+            <h3>@u.Users</h3>
+            <ul>
+                <li>Email: @u.Mail</li>
+                <li>Sex: @u.Sex</li>
+                <li>Status: @u.Status</li>
+            </ul>
+        </div>
+    }
+</div>

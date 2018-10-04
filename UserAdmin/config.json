@@ -1,0 +1,10 @@
+{
+  "Colors": {
+    "Favorite": "blue"
+  },
+  "ConnectionStrings": {
+    "UsersAdminConnectionString": "server=(localdb)\\ProjectsV13;Database=project_users;Integrated Security=true;MultipleActiveResultSets=true;"
+
+  }
+
+}
